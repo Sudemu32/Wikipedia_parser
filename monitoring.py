@@ -43,7 +43,7 @@ def main(url):
             continue
         #Извлекаю и обрабатываю строки
         else:
-            #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+            
             deceased_list = []
             text = li.get_text(strip=True)
             if '—' in text:
