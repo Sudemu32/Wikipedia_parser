@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 import sys
 import os
 import requests
@@ -42,8 +39,7 @@ def main(url):
         if li.find(['ul'], recursive=False):
             continue
         #Извлекаю и обрабатываю строки
-        else:
-            
+        else: 
             deceased_list = []
             text = li.get_text(strip=True)
             if '—' in text:
@@ -74,7 +70,7 @@ def main(url):
                     except Exception as e:
                         summary = text.split('—')[1]
 
-                        
+                        #Извлечение описания
                     summary = re.sub(r'\[\d+\]', '', summary).strip()
                     with open('person_id.csv', 'a', newline='', encoding='utf-8-sig') as file:
                         writer = csv.DictWriter(file, fieldnames = ['Name', 'Url'])
@@ -94,7 +90,7 @@ def send_mail(name, summary, link):
     msg['To'] = config.RECIPIENT
     msg.set_content(f"""{summary}
 {link}""")
-# Отправка
+    # Отправка
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(config.EMAIL_ADDRESS, config.EMAIL_PASSWORD)
@@ -114,14 +110,12 @@ if __name__ == "__main__":
             except Exception as e:
                 time.sleep(config.BEFORE_PARSE_PAUSE)
                 pass
-        
-        
         time.sleep(config.BEFORE_PARSE_PAUSE)           
        
           
 
 
-# In[ ]:
+
 
 
 
