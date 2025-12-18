@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import requests
 from bs4 import BeautifulSoup
 import wikipedia
@@ -55,8 +52,5 @@ if __name__ == "__main__":
         parse_write((config.URLS))
 
 
-# In[ ]:
 
-
-как постояннно по
 
