@@ -1,7 +1,7 @@
 BEFORE_PARSE_PAUSE = 20
 EMAIL_ADDRESS = 'sudemu228@gmail.com'
 EMAIL_PASSWORD = 'jlzm afnx rbee vomi'
-RECIPIENT = 'dimerzkiy@yandex.ru'
+RECIPIENT = 'EXAMPLE@MAIL.ru'
 
 URLS = [
     "https://ru.wikipedia.org/wiki/Список_умерших_в_2025_году",
