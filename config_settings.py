@@ -1,6 +1,6 @@
 BEFORE_PARSE_PAUSE = 20
 EMAIL_ADDRESS = 'sudemu228@gmail.com'
-EMAIL_PASSWORD = 'jlzm afnx rbee vomi'
+EMAIL_PASSWORD = '***************'
 RECIPIENT = 'EXAMPLE@MAIL.ru'
 
 URLS = [
